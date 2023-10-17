@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <div class="contaier">
+        <div class="row ">
+            <div class="col-10 m-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Create Your CV</h5>
+                    </div>
+                    <div class="card-body">
+                       
+                          <div class="row">
+                            <div class="col-5">                        
+                              <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="name" class="form-control" id="name" >
+                              </div>
+                              <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email">
+                              </div>
+                              <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="Phone" class="form-control" id="phone">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="gender" class="form-label">Gender</label>
+                                  <select class="form-select" aria-label="Default select example">
+                                      <option selected>Gender</option>
+                                      <option >Male</option>
+                                      <option >Female</option>
+                                  </select>
+                              </div>
+                              <div class="mb-3">
+                                  <label for="dateOfBirth" class="form-label">Date Of Birth</label>
+                                  <input type="datetime-local" class="form-control" id="dateOfBirth">
+                              </div>
+
+                              <div class="mb-3">
+                                  <label for="website" class="form-label">Web Site</label>
+                                  <input type="url" class="form-control" id="website">
+                              </div>
+                              
+                              <div class="mb-3">
+                                  <label for="website" class="form-label">Marital Status</label>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="marital_status" id="marital_status">
+                                    <label class="form-check-label" for="marital_status">
+                                      Married
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="marital_status" id="marital_status" checked>
+                                    <label class="form-check-label" for="marital_status">
+                                      Single
+                                    </label>
+                                  </div>
+                              </div>
+                              <div class="mb-3"></div>
+                              <label for="website" class="form-label">Favorite Color</label>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="black">
+                                  <label class="form-check-label" for="black">
+                                    Black
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="white" checked>
+                                  <label class="form-check-label" for="white">
+                                    White
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="pink" checked>
+                                  <label class="form-check-label" for="pink">
+                                    Pink
+                                  </label>
+                                </div>
+                            </div>
+
+                            <div class="col-5">
+
+                              <div class="mb-3">
+                                <label for="gender" class="form-label">Family Member</label>
+                                <div class="flex flex-row space-between item-center text-center">
+
+                                  <button class="btn btn-info"> > </button>
+                                  <input type="number" value="">
+                                  <button class="btn btn-info"> < </button>
+                                </div>
+                              </div>
+
+
+                              <div class="mb-3">
+                                <label for="skills" class="form-label">Skill Tag (I can aslo delete tag item after add tag)</label>
+                                <input type="text" class="form-control" id="skills">
+                                <span style="color: green; background-color: yellow;">html</span> <span style="color: green; background-color: yellow;">css</span> <span style="color: green; background-color: yellow;">javascript</span>
+                              </div>
+                              <div class="mb-3">
+                                <label for="average_skills">Average Skills (I can show live data changing):</label>
+
+                                <input type="range" id="average_skills" name="average_skills" min="0" max="10">
+                              </div>  
+
+                              <div class="mb-3">
+                                <label for="" class="form-label">About Yourself(charecter limit will be done and live show how mouch carecter given, when limit will be finished user cannot input carecters)</label>
+                                <textarea class="form-control" name="" id="" rows="3"></textarea>
+                              </div>
+                              <div class="mb-3">
+                                <label for="district" class="form-label">District</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>District</option>
+                                    <option >Dhaka</option>
+                                    <option >Manikgonj</option>
+                                    <option >Tangail</option>
+                                </select>
+                              </div>
+
+                              <div class="mb-3">
+                                <label for="PolicStation" class="form-label">Police Station (This option will be automatic load when select district)</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Police Station</option>
+                                    <option >Saturia</option>
+                                    <option >Baliyati</option>
+                                    <option >Tilli</option>
+                                </select>
+                              </div>
+
+                              <div class="mb-3">
+                                <label for="PolicStation" class="form-label">Image(single image with preview and i can also close or change image after select)</label>
+                                <input type="file">
+                                <img src="img/1.png" alt="" style="width: 50px;">
+                              </div>
+
+                              <div class="mb-3">
+                                <label for="PolicStation" class="form-label">Multiple Image(multiple image with preview and i can also close or change image after select)</label>
+                                <input type="file">
+                                <img src="img/1.png" alt="" style="width: 50px;">
+                                <img src="img/2.png" alt="" style="width: 50px;">
+                                <img src="img/1.png" alt="" style="width: 50px;">
+                              </div>
+
+                            </div>
+                          </div>
+
+
+                          <div class="mb-3">
+                            <label for="pasword">Password (password validate with live show and password show or close)</label>
+
+                            <input type="password" id="pasword" name="password">
+                          </div>  
+                         
+                            <div class="btn-group mt-5">
+                              <button type="submit" class="btn btn-primary">Submit</button>                           
+                            </div>
+
+                        </form>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js link here  -->
+    <script src="app.js"></script>
+  </body>
+</html>
